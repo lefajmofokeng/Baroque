@@ -7,13 +7,13 @@ This repository serves as a **design and implementation reference**, demonstrati
 ---
 
 ## Preview
+<img width="1920" height="868" alt="baroque" src="https://github.com/user-attachments/assets/35113259-667d-4b97-a91d-3390cb4cda8e" />
 
 
 
-### Live Demo
+### Live Demonstration
 
-**Live Preview:**
-[https://lefajmofokeng.github.io/Baroque](https://lefajmofokeng.github.io/Baroque)
+[View Baroque](https://lefajmofokeng.github.io/Baroque)
 
 ---
 

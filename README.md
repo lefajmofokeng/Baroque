@@ -4,8 +4,6 @@ Baroque is a refined front-end UI demo showcasing a **modern “Related Articles
 
 This repository serves as a **design and implementation reference**, demonstrating how a simple content-driven component can be built cleanly using semantic HTML and modular CSS without relying on heavy frameworks.
 
----
-
 ## Preview
 <img width="1920" height="868" alt="baroque" src="https://github.com/user-attachments/assets/35113259-667d-4b97-a91d-3390cb4cda8e" />
 
@@ -31,7 +29,6 @@ The Baroque component represents a **content discovery section** commonly found 
 * Image handling with consistent aspect ratios
 * Minimal, maintainable codebase
 
----
 
 ## Technical Breakdown
 
@@ -57,8 +54,6 @@ The component is designed with:
 * **Clarity** – Easy to read, modify, and extend
 * **Performance** – Zero JavaScript dependency
 
----
-
 ## Ideal Use Cases
 
 Baroque is ideal for:
@@ -70,8 +65,6 @@ Baroque is ideal for:
 * CMS-driven article feeds
 * UI/UX demonstrations and portfolios
 
----
-
 ## Extensibility & Integration
 
 While built with plain HTML and CSS, this component can be **easily integrated** into:
@@ -82,7 +75,6 @@ While built with plain HTML and CSS, this component can be **easily integrated**
 
 The isolated class architecture ensures minimal refactoring when ported into larger ecosystems.
 
----
 
 ## Folder Structure
 
@@ -92,8 +84,6 @@ Baroque/
 ├── styles.css
 └── preview.png
 ```
-
----
 
 ## Getting Started
 
@@ -106,8 +96,6 @@ Baroque/
 2. Open `index.html` in your browser or serve locally.
 
 No build tools or dependencies are required.
-
----
 
 ## License
 

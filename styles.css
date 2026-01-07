@@ -1,0 +1,147 @@
+/* CSS Isolation Strategy:
+           All classes are prefixed with 'ra-' (Related Articles) to prevent 
+           conflicts with existing codebases.
+        */
+
+        :root {
+            --ra-font-family: 'Bricolage Grotesque', sans-serif;
+            --ra-color-text-main: #111111;
+            --ra-color-text-secondary: #666666;
+            --ra-color-bg-tag: #F3F4F6;
+            --ra-color-border-btn: #111111;
+            --ra-spacing-unit: 8px;
+        }
+
+        /* Reset for component isolation */
+        .ra-component-wrapper * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .ra-component-wrapper {
+            font-family: var(--ra-font-family);
+            color: var(--ra-color-text-main);
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff; /* Ensure white background as per image */
+        }
+
+        /* Header Section */
+        .ra-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: calc(var(--ra-spacing-unit) * 5); /* approx 40px */
+        }
+
+        .ra-main-title {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            line-height: 1;
+        }
+
+        .ra-browse-btn {
+            font-family: var(--ra-font-family);
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--ra-color-text-main);
+            background: transparent;
+            border: 1px solid var(--ra-color-border-btn);
+            padding: 12px 24px;
+            border-radius: 999px; /* Pill shape */
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .ra-browse-btn:hover {
+            background-color: var(--ra-color-bg-tag);
+        }
+
+        /* Grid Section */
+        .ra-articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        /* Responsive Switch for smaller screens, though desktop is priority */
+        @media (max-width: 900px) {
+            .ra-articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .ra-articles-grid {
+                grid-template-columns: 1fr;
+            }
+            .ra-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+        }
+
+        /* Article Card */
+        .ra-card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ra-card-image-wrapper {
+            width: 100%;
+            aspect-ratio: 4 / 3; /* Matches the visual aspect ratio */
+            border-radius: 24px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .ra-card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .ra-card-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ra-card-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .ra-tag {
+            background-color: var(--ra-color-bg-tag);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-weight: 600;
+        }
+
+        .ra-date {
+            color: var(--ra-color-text-secondary);
+        }
+
+        .ra-card-title {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .ra-excerpt {
+            font-size: 16px;
+            line-height: 1.5;
+            color: var(--ra-color-text-secondary);
+        }
